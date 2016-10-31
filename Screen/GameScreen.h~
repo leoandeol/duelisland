@@ -1,0 +1,21 @@
+#pragma once
+
+#include "AbstractScreen.h"
+#include "../World/World.h"
+
+class GameScreen :
+	public AbstractScreen
+{
+public:
+	GameScreen(sf::RenderWindow*);
+	virtual void update();
+	virtual void draw();
+	~GameScreen();
+
+private:
+	World world;
+	sf::View view;
+	sf::Vector2f mouse_move, last_mouse_move;
+	//TODO: make it dynamic (and the window too yo)
+};
+
