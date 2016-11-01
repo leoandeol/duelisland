@@ -1,4 +1,5 @@
-#pragma once
+#ifndef GAMESCREEN_H
+#define GAMESCREEN_H
 
 #include "AbstractScreen.h"
 
@@ -15,3 +16,4 @@ private:
 	sf::View view;
 };
 
+#endif
